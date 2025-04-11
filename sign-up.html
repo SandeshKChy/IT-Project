@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">NEXT</a>
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/products.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/contact-us.html" class="navbar__links">Contact</a>
+                </li>
+            </ul>
+            <div class="navbar__search">
+                <input type="text" placeholder="Search..." class="search__input">
+                <button class="search__button">
+                    <img src="search-vector.png" alt="Search" class="search__icon">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="sign-up">
+        <h1>Create Your Account</h1>
+        <div class="form-container">
+            <form action="signup_handler.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <input type="submit" value="Sign Up" class="button">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Next Website. All rights reserved.</p>
+        <p>Developed by SKC.</p>
+        <br>
+        <p>The British College</p>
+        <div class="footer-links">
+            <a href="https://www.instagram.com" target="_blank" class="footer-link" onclick="return confirmLeave('Instagram')">Instagram</a> |
+            <a href="mailto:your-email@example.com" class="footer-link" onclick="return confirmLeave('Email')">Email</a> |
+            <a href="https://www.facebook.com" target="_blank" class="footer-link" onclick="return confirmLeave('Facebook')">Facebook</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
