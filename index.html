@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Next Website, your go-to platform for the latest in technology and products.">
+    <title>Next Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">NEXT</a>
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/products.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/contact-us.html" class="navbar__links">Contact Us</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/sign-up.html" class="navbar__links">Sign up</a>
+                </li>
+            </ul>
+            <div class="navbar__search">
+                <input type="text" placeholder="Search..." class="search__input">
+                <button class="search__button">
+                    <img src="search-vector.png" alt="Search" class="search__icon">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Welcome to the Next Website</h1>
+    <p>Your go-to platform for the latest in technology and products.</p>
+
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="laptop-for-product1.jpeg" alt="Product 1" class="product-image">
+                <h3 class="product-title">Devices</h3>
+                <p class="product-description">
+                    We make shopping and gathering information easier for you. Making your shopping experience come first for our users. You can go through our products and ship them to your designated location. We assure you of a better experience with every click.
+                </p>
+            </div>
+            <div class="product-item">
+                <img src="charger-for-product2.jpeg" alt="Product 2" class="product-image">
+                <h3 class="product-title">Appliances</h3>
+                <p class="product-description">Other from functonality, Every product is required to build memories. You can buy original products here that remain functional for years. It's about making memories. We make sure that you don't need to buy the same product from our shipping. HAPPY SHOPPING!</p>
+            </div>
+            <div class="product-item">
+                <img src="gift-cards-for-product3.jpeg" alt="Product 3" class="product-image">
+                <h3 class="product-title">Gift Cards</h3>
+                <p class="product-description"> More than just a card, it's a passport to a world of possibilities! Next gift cards can be redeemed for anything from UC [Pubg] to Diamonds [Free-Fire]. Perfect gift for your gaming friend. Seeing you happy makes us happier.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Next Website. All rights reserved.</p>
+        <p>Developed by SKC.</p>
+        <br>
+        <p>The British College</p>
+        <div class="footer-links">
+            <a href="https://www.instagram.com" target="_blank" class="footer-link" onclick="return confirmLeave('Instagram')">Instagram</a> |
+            <a href="mailto:your-email@example.com" class="footer-link" onclick="return confirmLeave('Email')">Email</a> |
+            <a href="https://www.facebook.com" target="_blank" class="footer-link" onclick="return confirmLeave('Facebook')">Facebook</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
