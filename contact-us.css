@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    max-width: 1320px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto; 
+    text-align: center; 
+    padding-bottom: 40px; 
+}
+p {
+    font-size: 1.2rem;
+    color: #212529;
+    margin: 20px 0;
+}
+.navbar {
+    background: #343A40;
+    height: 80px; /* Match the height of the Products page navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+.navbar__container {
+    max-width: 1320px; /* Match the width of the Products page */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding for consistency */
+}
+
+#navbar__logo {
+    color: #FFFFFF;
+    font-size: 2rem; /* Match the font size of the Products page logo */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    margin: 0 10px; /* Adjust spacing between menu items */
+}
+
+.navbar__links {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px; /* Adjust padding for consistency */
+    transition: color 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #007BFF;
+}
+
+.navbar__toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #FFFFFF;
+}
+
+.navbar__search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.search__input {
+    padding: 8px 12px; /* Adjust padding for consistency */
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search__button {
+    background: #007BFF;
+    border: none;
+    padding: 8px 12px; /* Adjust padding for consistency */
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.search__button:hover {
+    background: #0056b3;
+}
+
+.search__icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar__toggle {
+        display: block;
+    }
+
+    .navbar__item {
+        margin: 10px 0;
+    }
+}
+
+.contact-us {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #F8F9FA;
+    min-height: calc(100vh - 80px); 
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container label {
+    display: block;
+    font-size: 1rem;
+    color: #212529;
+    margin-bottom: 5px;
+}
+
+.container input,
+.container select,
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.container input[type="submit"] {
+    background: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container input[type="submit"]:hover {
+    background: #0056b3;
+}
+footer {
+    position: relative; 
+    background: #343A40;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 0; 
+    font-size: 0.9rem;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+footer p {
+    color: #FFFFFF;
+    margin: 10px 0; 
+}
+
+.footer-links {
+    margin-top: 20px; 
+}
+
+.footer-link {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 0.9rem;
+}
+
+.footer-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

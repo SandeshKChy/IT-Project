@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-us.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">NEXT</a>
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/products.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/sign-up.html" class="navbar__links">Sign up</a>
+                </li>
+            </ul>
+            <div class="navbar__search">
+                <input type="text" placeholder="Search..." class="search__input">
+                <button class="search__button">
+                    <img src="search-vector.png" alt="Search" class="search__icon">
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="container">
+            <form action="contact_form_handler.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">E-mail:</label>
+                <input type="email" id="address" name="address" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="birth-date">Date of Birth:</label>
+                <input type="date" id="birth-date" name="birth-date">
+
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" name="Password">
+
+                <label for="Suggestions">Suggestions:</label>
+                <textarea id="Suggestions" name="Suggestions" rows="4"></textarea>
+
+                <input type="submit" value="Submit" class="button">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Next Website. All rights reserved.</p>
+        <p>Developed by SKC.</p>
+        <br>
+        <p>The British College</p>
+        <div class="footer-links">
+            <a href="https://www.instagram.com" target="_blank" class="footer-link" onclick="return confirmLeave('Instagram')">Instagram</a> |
+            <a href="mailto:your-email@example.com" class="footer-link" onclick="return confirmLeave('Email')">Email</a> |
+            <a href="https://www.facebook.com" target="_blank" class="footer-link" onclick="return confirmLeave('Facebook')">Facebook</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
